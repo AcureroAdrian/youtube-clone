@@ -1,7 +1,9 @@
+import { Nav, ContainerSearchInput, SearchInput } from 'themes/navbar'
+
+
 export const Navbar = () => {
   return (
-    <nav className='navbar'>
-
+    <Nav>
       {/* Logo */}
       <div className='flex items-center '>
         <button className='p-2'>
@@ -18,9 +20,9 @@ export const Navbar = () => {
         <div className='absolute w-12 pl-3 pr-4'>
           <img src='/search-icon.svg' className='' width='100%' />
         </div>
-        <div className='containerSearchInput '>
-          <input placeholder='Buscar' type="text" className='searchInput' />
-        </div>
+        <ContainerSearchInput>
+          <SearchInput placeholder='Buscar' type="text" />
+        </ContainerSearchInput>
       </div>
 
       <div className='w-56 h-10'>
@@ -28,6 +30,6 @@ export const Navbar = () => {
 
         </div>
       </div>
-    </nav>
+    </Nav>
   )
 }
