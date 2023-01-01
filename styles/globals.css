@@ -1,3 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '../components/Navbar/style.css';
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -6,8 +12,8 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 113, 113, 113;
+  --background-end-rgb: 113, 113, 113;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -87,12 +93,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #0f0f0f;
 }
 
 a {

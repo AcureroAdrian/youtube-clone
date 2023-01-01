@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .navbar {	
+    @apply flex items-center justify-between h-14 px-4 bg-[#212121fa];
+}
+
+  .containerSearchInput {
+    @apply flex items-center w-[540px] h-10 bg-[#121212] pr-1 pl-4 ml-8 rounded-l-full border border-[#303030];
+  }
+
+  .searchInput {
+    @apply w-full bg-transparent border-none outline-none py-[1px] text-base placeholder:font-roboto;
+  }
+
+  .containerSearchInput:focus-within {
+    @apply pointer-events-auto;
+  }
+}
