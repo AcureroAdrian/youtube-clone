@@ -1,0 +1,5 @@
+export * from './SearchIconSVG'
+export * from './YoutubeLogoSVG'
+export * from './ShowSidebarSVG'
+export * from './NotificationSVG'
+export * from './UploadSVG'
